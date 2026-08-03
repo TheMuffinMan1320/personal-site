@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jordan Lee — Software Engineer</title>
-<meta name="description" content="Computer science student and software engineer. Projects, experience, and skills.">
+<title>Afnan Hasan — Software Engineer</title>
+<meta name="description" content="Afnan Hasan — CS student at UT Austin and software engineer. Full-stack projects, internship experience, and skills.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,13 +15,14 @@
 <div class="scanline" aria-hidden="true"></div>
 
 <header class="topbar">
-  <span class="prompt">guest@jordanlee:~$</span>
+  <span class="prompt">guest@afnanhasan:~$</span>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
   <nav class="nav" id="nav">
     <a href="#projects">~/projects</a>
     <a href="#experience">~/experience</a>
+    <a href="#education">~/education</a>
     <a href="#skills">~/skills</a>
     <a href="#contact">~/contact</a>
     <a href="resume.pdf" class="nav-resume">resume.pdf</a>
@@ -31,19 +32,19 @@
 <main>
 
   <section class="hero" id="top">
-    <p class="eyebrow">// computer science, class of 2027</p>
-    <h1 class="hero-name">Jordan Lee<span class="cursor" aria-hidden="true"></span></h1>
-    <p class="hero-role">Software engineer focused on distributed systems and developer tooling.</p>
+    <p class="eyebrow">// computer science @ ut austin</p>
+    <h1 class="hero-name">Afnan Hasan<span class="cursor" aria-hidden="true"></span></h1>
+    <p class="hero-role">Software engineer building full-stack products across web, mobile, and ML.</p>
     <p class="hero-bio">
-      I'm a CS student at Anytown University, currently building backend systems
-      and contributing to open source. I like problems with clear feedback loops —
-      compilers, databases, infrastructure. Previously interned on the platform
-      team at a Series B startup.
+      I'm a CS student at UT Austin, currently interning remotely on the software
+      team at CS Holding, an investment firm based in Milan. I like taking products
+      end-to-end — Next.js dashboards, React Native apps, Spring Boot APIs — and
+      I've spent the last few summers doing exactly that across fintech, hospitality,
+      and property management.
     </p>
     <div class="hero-links">
-      <a href="mailto:jordan.lee@email.com">jordan.lee@email.com</a>
-      <a href="https://github.com/jordanlee" target="_blank" rel="noopener">github.com/jordanlee</a>
-      <a href="https://linkedin.com/in/jordanlee" target="_blank" rel="noopener">linkedin.com/in/jordanlee</a>
+      <a href="mailto:afnanhasan1320@gmail.com">afnanhasan1320@gmail.com</a>
+      <a href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">github.com/TheMuffinMan1320</a>
     </div>
   </section>
 
@@ -52,54 +53,46 @@
 
     <article class="project">
       <div class="project-head">
-        <h3>orbit</h3>
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener">source</a>
-          <a href="#" target="_blank" rel="noopener">demo</a>
-        </div>
+        <h3>Homegrown</h3>
       </div>
       <p class="project-desc">
-        A distributed task scheduler that handles retry, backoff, and priority
-        queueing across worker nodes. Built to explore consensus and fault
-        tolerance at small scale.
+        A full-stack mobile marketplace for fresh produce, plant posts, and community
+        groups, with 30+ onboarding users. Integrates a Gemini-powered AI assistant
+        for in-app gardening Q&amp;A and a MobileNetV2 model trained on 40,000+ produce
+        images to verify product freshness.
       </p>
       <ul class="tags">
-        <li>go</li><li>raft</li><li>grpc</li><li>docker</li>
+        <li>typescript</li><li>react native</li><li>postgresql</li><li>tensorflow</li>
       </ul>
     </article>
 
     <article class="project">
       <div class="project-head">
-        <h3>querylens</h3>
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener">source</a>
-          <a href="#" target="_blank" rel="noopener">demo</a>
-        </div>
+        <h3>FinTrack</h3>
       </div>
       <p class="project-desc">
-        A visual query plan explainer for Postgres. Parses <code>EXPLAIN ANALYZE</code>
-        output and renders an interactive execution tree with cost and timing
-        breakdowns.
+        A REST API simulating a fintech backend, with JWT auth, RBAC, idempotent
+        transaction processing, and Flyway migrations. Integrates Resilience4j
+        circuit breakers and Spring Actuator observability, backed by a full test
+        suite (Mockito, MockMvc, Testcontainers).
       </p>
       <ul class="tags">
-        <li>typescript</li><li>react</li><li>postgres</li><li>d3</li>
+        <li>java</li><li>spring boot</li><li>postgresql</li><li>flyway</li><li>resilience4j</li>
       </ul>
     </article>
 
     <article class="project">
       <div class="project-head">
-        <h3>tinycompiler</h3>
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener">source</a>
-        </div>
+        <h3>Car Platform</h3>
       </div>
       <p class="project-desc">
-        A compiler for a small C-like language, targeting x86-64 assembly directly.
-        Written for a compilers course; includes a hand-rolled lexer, recursive
-        descent parser, and a simple register allocator.
+        A full-stack car rental system with fleet CRUD, reservation lifecycle
+        management, and idempotency-safe payment processing. Includes a web scraper
+        that scores vehicle profitability — acquisition cost, depreciation, projected
+        rental revenue — from CarGurus and Manheim listings.
       </p>
       <ul class="tags">
-        <li>rust</li><li>x86-64</li><li>llvm</li>
+        <li>java</li><li>spring boot</li><li>react native</li><li>python</li>
       </ul>
     </article>
   </section>
@@ -111,42 +104,72 @@
       <div class="role-head">
         <div>
           <h3>Software Engineering Intern</h3>
-          <p class="role-org">Northgate Labs</p>
+          <p class="role-org">CS Holding</p>
         </div>
-        <p class="role-dates">Jun 2025 — Aug 2025</p>
+        <p class="role-dates">Jul 2026 — Present</p>
       </div>
       <ul class="role-points">
-        <li>Rebuilt the internal deploy pipeline, cutting median release time from 40 minutes to under 9.</li>
-        <li>Wrote a Go service to batch and dedupe webhook events, reducing downstream API load by roughly 30%.</li>
-        <li>Shipped a CLI tool adopted by three other engineering teams for local environment setup.</li>
+        <li>Built a full-stack Next.js dashboard with Google OAuth (Gmail, Calendar, Drive) to centralize deal and portfolio-company data for the investment team.</li>
+        <li>Wrote automation scripts and deployed them to AWS Lambda to streamline recurring data-processing workflows.</li>
       </ul>
     </article>
 
     <article class="role">
       <div class="role-head">
         <div>
-          <h3>Teaching Assistant, Data Structures & Algorithms</h3>
-          <p class="role-org">Anytown University</p>
+          <h3>Software Engineering Intern</h3>
+          <p class="role-org">Days Inn and Suites by Wyndham</p>
         </div>
-        <p class="role-dates">Sep 2024 — Present</p>
+        <p class="role-dates">May 2026 — Jun 2026</p>
       </div>
       <ul class="role-points">
-        <li>Hold weekly office hours and lead a discussion section of 25 students.</li>
-        <li>Rewrote three assignment specs and autograders to close common misunderstanding gaps.</li>
+        <li>Built a full-stack hotel management system with ML occupancy forecasting, dynamic pricing, and an AI agent layer for autonomous operations.</li>
+        <li>Automated check-in/check-out workflows and integrated with external booking platforms (Expedia, Booking.com).</li>
       </ul>
     </article>
 
     <article class="role">
       <div class="role-head">
         <div>
-          <h3>Research Assistant, Systems Lab</h3>
-          <p class="role-org">Anytown University</p>
+          <h3>Web Development Intern</h3>
+          <p class="role-org">Lincoln Property Company</p>
         </div>
-        <p class="role-dates">Jan 2024 — May 2024</p>
+        <p class="role-dates">Jun 2024 — Aug 2024</p>
       </div>
       <ul class="role-points">
-        <li>Benchmarked consensus protocol variants under simulated network partition.</li>
-        <li>Co-authored a workshop paper on failure injection testing for distributed key-value stores.</li>
+        <li>Developed a full-stack web application using React and a Convex database to streamline maintenance requests for tenants in a high-rise office building.</li>
+        <li>Used Python, pandas, and Matplotlib to generate and email weekly expense reports to building management.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Data Science Intern</h3>
+          <p class="role-org">The Samaritan Inn</p>
+        </div>
+        <p class="role-dates">Jun 2023 — Aug 2023</p>
+      </div>
+      <ul class="role-points">
+        <li>Used Python, pandas, and Matplotlib to analyze $160k+ in donations given to the homeless shelter.</li>
+        <li>Managed Salesforce to schedule, background check, and confirm 300+ volunteers, and budgeted a 4th of July event for all shelter residents.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section" id="education">
+    <h2 class="section-title">// education</h2>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Bachelor of Science, Computer Science</h3>
+          <p class="role-org">University of Texas at Austin — GPA 3.96/4.0</p>
+        </div>
+        <p class="role-dates">Aug 2025 — Present</p>
+      </div>
+      <ul class="tags">
+        <li>data structures & algorithms</li><li>computer architecture</li><li>discrete math</li><li>operating systems</li>
       </ul>
     </article>
   </section>
@@ -157,21 +180,21 @@
     <div class="skill-group">
       <p class="skill-label">languages</p>
       <ul class="tags">
-        <li>go</li><li>typescript</li><li>python</li><li>rust</li><li>c++</li><li>sql</li>
+        <li>java</li><li>python</li><li>c</li><li>javascript</li><li>typescript</li><li>html</li><li>css</li>
       </ul>
     </div>
 
     <div class="skill-group">
       <p class="skill-label">frameworks & tools</p>
       <ul class="tags">
-        <li>react</li><li>node</li><li>postgres</li><li>docker</li><li>kubernetes</li><li>git</li>
+        <li>spring boot</li><li>react</li><li>react native</li><li>postgresql</li><li>flyway</li><li>resilience4j</li><li>aws</li><li>docker</li><li>kubernetes</li>
       </ul>
     </div>
 
     <div class="skill-group">
-      <p class="skill-label">coursework</p>
+      <p class="skill-label">libraries</p>
       <ul class="tags">
-        <li>algorithms</li><li>operating systems</li><li>compilers</li><li>distributed systems</li><li>databases</li>
+        <li>pandas</li><li>numpy</li><li>tensorflow</li><li>pytorch</li><li>matplotlib</li><li>streamlit</li>
       </ul>
     </div>
   </section>
@@ -181,10 +204,9 @@
 <footer class="footer" id="contact">
   <p class="footer-prompt">// contact</p>
   <div class="footer-links">
-    <a href="mailto:jordan.lee@email.com">jordan.lee@email.com</a>
-    <a href="https://github.com/jordanlee" target="_blank" rel="noopener">github</a>
-    <a href="https://linkedin.com/in/jordanlee" target="_blank" rel="noopener">linkedin</a>
-    <a href="resume.pdf">resume</a>
+    <a href="mailto:afnanhasan1320@gmail.com">afnanhasan1320@gmail.com</a>
+    <a href="tel:+14693831991">469-383-1991</a>
+    <a href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">github</a>
   </div>
   <p class="footer-meta">Built from scratch, no framework. Last updated 2026.</p>
 </footer>
