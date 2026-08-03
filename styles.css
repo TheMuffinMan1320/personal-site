@@ -106,6 +106,7 @@ code {
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 20px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -120,9 +121,10 @@ code {
   color: var(--ink);
 }
 
-.nav-resume {
-  color: var(--ink) !important;
-  border-bottom: 1px solid var(--ink) !important;
+.nav-icon {
+  display: flex;
+  align-items: center;
+  color: var(--ink);
 }
 
 .nav-toggle {
@@ -448,6 +450,10 @@ main, .footer {
   .nav a {
     padding: 14px var(--gutter);
     border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-icon {
+    display: none;
   }
 
   .hero {
