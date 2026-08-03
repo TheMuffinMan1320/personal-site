@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Lee — Software Engineer</title>
+<meta name="description" content="Computer science student and software engineer. Projects, experience, and skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <span class="prompt">guest@jordanlee:~$</span>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" id="nav">
+    <a href="#projects">~/projects</a>
+    <a href="#experience">~/experience</a>
+    <a href="#skills">~/skills</a>
+    <a href="#contact">~/contact</a>
+    <a href="resume.pdf" class="nav-resume">resume.pdf</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <p class="eyebrow">// computer science, class of 2027</p>
+    <h1 class="hero-name">Jordan Lee<span class="cursor" aria-hidden="true"></span></h1>
+    <p class="hero-role">Software engineer focused on distributed systems and developer tooling.</p>
+    <p class="hero-bio">
+      I'm a CS student at Anytown University, currently building backend systems
+      and contributing to open source. I like problems with clear feedback loops —
+      compilers, databases, infrastructure. Previously interned on the platform
+      team at a Series B startup.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:jordan.lee@email.com">jordan.lee@email.com</a>
+      <a href="https://github.com/jordanlee" target="_blank" rel="noopener">github.com/jordanlee</a>
+      <a href="https://linkedin.com/in/jordanlee" target="_blank" rel="noopener">linkedin.com/in/jordanlee</a>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">// projects</h2>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>orbit</h3>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">source</a>
+          <a href="#" target="_blank" rel="noopener">demo</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A distributed task scheduler that handles retry, backoff, and priority
+        queueing across worker nodes. Built to explore consensus and fault
+        tolerance at small scale.
+      </p>
+      <ul class="tags">
+        <li>go</li><li>raft</li><li>grpc</li><li>docker</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>querylens</h3>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">source</a>
+          <a href="#" target="_blank" rel="noopener">demo</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A visual query plan explainer for Postgres. Parses <code>EXPLAIN ANALYZE</code>
+        output and renders an interactive execution tree with cost and timing
+        breakdowns.
+      </p>
+      <ul class="tags">
+        <li>typescript</li><li>react</li><li>postgres</li><li>d3</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>tinycompiler</h3>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">source</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A compiler for a small C-like language, targeting x86-64 assembly directly.
+        Written for a compilers course; includes a hand-rolled lexer, recursive
+        descent parser, and a simple register allocator.
+      </p>
+      <ul class="tags">
+        <li>rust</li><li>x86-64</li><li>llvm</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 class="section-title">// experience</h2>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Software Engineering Intern</h3>
+          <p class="role-org">Northgate Labs</p>
+        </div>
+        <p class="role-dates">Jun 2025 — Aug 2025</p>
+      </div>
+      <ul class="role-points">
+        <li>Rebuilt the internal deploy pipeline, cutting median release time from 40 minutes to under 9.</li>
+        <li>Wrote a Go service to batch and dedupe webhook events, reducing downstream API load by roughly 30%.</li>
+        <li>Shipped a CLI tool adopted by three other engineering teams for local environment setup.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Teaching Assistant, Data Structures & Algorithms</h3>
+          <p class="role-org">Anytown University</p>
+        </div>
+        <p class="role-dates">Sep 2024 — Present</p>
+      </div>
+      <ul class="role-points">
+        <li>Hold weekly office hours and lead a discussion section of 25 students.</li>
+        <li>Rewrote three assignment specs and autograders to close common misunderstanding gaps.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Research Assistant, Systems Lab</h3>
+          <p class="role-org">Anytown University</p>
+        </div>
+        <p class="role-dates">Jan 2024 — May 2024</p>
+      </div>
+      <ul class="role-points">
+        <li>Benchmarked consensus protocol variants under simulated network partition.</li>
+        <li>Co-authored a workshop paper on failure injection testing for distributed key-value stores.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="section-title">// skills</h2>
+
+    <div class="skill-group">
+      <p class="skill-label">languages</p>
+      <ul class="tags">
+        <li>go</li><li>typescript</li><li>python</li><li>rust</li><li>c++</li><li>sql</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-label">frameworks & tools</p>
+      <ul class="tags">
+        <li>react</li><li>node</li><li>postgres</li><li>docker</li><li>kubernetes</li><li>git</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-label">coursework</p>
+      <ul class="tags">
+        <li>algorithms</li><li>operating systems</li><li>compilers</li><li>distributed systems</li><li>databases</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <p class="footer-prompt">// contact</p>
+  <div class="footer-links">
+    <a href="mailto:jordan.lee@email.com">jordan.lee@email.com</a>
+    <a href="https://github.com/jordanlee" target="_blank" rel="noopener">github</a>
+    <a href="https://linkedin.com/in/jordanlee" target="_blank" rel="noopener">linkedin</a>
+    <a href="resume.pdf">resume</a>
+  </div>
+  <p class="footer-meta">Built from scratch, no framework. Last updated 2026.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
