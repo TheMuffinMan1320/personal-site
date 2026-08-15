@@ -24,6 +24,7 @@
     <a href="#experience">~/experience</a>
     <a href="#education">~/education</a>
     <a href="#skills">~/skills</a>
+    <a href="#open-source">~/open-source</a>
     <a href="#contact">~/contact</a>
     <span class="nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +66,7 @@
         A full-stack mobile marketplace for fresh produce, plant posts, and community
         groups, with 30+ onboarding users. Integrates a Gemini-powered AI assistant
         for in-app gardening Q&amp;A and a MobileNetV2 model trained on 40,000+ produce
-        images to verify product freshness.
+        images to verify product freshness at 94% held-out test accuracy.
       </p>
       <ul class="tags">
         <li>typescript</li><li>react native</li><li>postgresql</li><li>tensorflow</li>
@@ -75,12 +76,15 @@
     <article class="project">
       <div class="project-head">
         <h3>FinTrack</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/fintrack" target="_blank" rel="noopener">code</a>
+        </div>
       </div>
       <p class="project-desc">
         A REST API simulating a fintech backend, with JWT auth, RBAC, idempotent
         transaction processing, and Flyway migrations. Integrates Resilience4j
         circuit breakers and Spring Actuator observability, backed by a full test
-        suite (Mockito, MockMvc, Testcontainers).
+        suite (Mockito, MockMvc, Testcontainers), averaging 70–80ms response time.
       </p>
       <ul class="tags">
         <li>java</li><li>spring boot</li><li>postgresql</li><li>flyway</li><li>resilience4j</li>
@@ -90,15 +94,153 @@
     <article class="project">
       <div class="project-head">
         <h3>Car Platform</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/carplatform" target="_blank" rel="noopener">code</a>
+        </div>
       </div>
       <p class="project-desc">
-        A full-stack car rental system with fleet CRUD, reservation lifecycle
-        management, and idempotency-safe payment processing. Includes a web scraper
-        that scores vehicle profitability — acquisition cost, depreciation, projected
-        rental revenue — from CarGurus and Manheim listings.
+        A full-stack car rental system managing a 45+ vehicle fleet for ~85 renters
+        monthly, with reservation lifecycle management and idempotency-safe payment
+        processing. Includes a web scraper analyzing 2,000+ CarGurus and Manheim
+        listings for profitability, which informed the acquisition of 12 vehicles.
       </p>
       <ul class="tags">
         <li>java</li><li>spring boot</li><li>react native</li><li>python</li>
+      </ul>
+    </article>
+
+    <p class="projects-subhead">// also on github</p>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>CarSight</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/CarSight" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A social car-spotting platform for iOS. Users identify cars with on-device
+        AI, build a personal spotted-car collection, follow other enthusiasts, and
+        book professional automotive photographers.
+      </p>
+      <ul class="tags">
+        <li>typescript</li><li>react native</li><li>expo</li><li>on-device ai</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>LooxMax</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/LooxMax" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        An AI-powered facial analysis tracker. Upload a photo, get scored on six
+        facial features by Claude Vision, track progress over time, and compete on
+        leaderboards with friends.
+      </p>
+      <ul class="tags">
+        <li>typescript</li><li>react native</li><li>expo</li><li>claude vision</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>EgoLift</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/EgoLift" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        Records a short clip of an exercise and uses on-device pose estimation to
+        analyze form in real time, no internet connection required. Errors surface
+        as post-it annotations pinned to the exact body part that needs correction.
+      </p>
+      <ul class="tags">
+        <li>typescript</li><li>react native</li><li>pose estimation</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>get-swe</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/get-swe" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        Everything a college student needs to land a software engineering
+        internship, packaged as eight Claude Code skills: tailor a resume to a real
+        posting, drill DSA and behavioral questions, run a full mock interview, find
+        open postings, generate a portfolio project worth building, and get a
+        GitHub profile audited like a recruiter would.
+      </p>
+      <ul class="tags">
+        <li>shell</li><li>claude code</li><li>developer tooling</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>resume-analyzer</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/resume-analyzer" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A Streamlit app that uses an LLM to analyze an uploaded resume and return a
+        tailored response based on a given job title.
+      </p>
+      <ul class="tags">
+        <li>python</li><li>streamlit</li><li>llm</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>image-classifier</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/image-classifier" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        An image classifier built on a pre-trained TensorFlow model.
+      </p>
+      <ul class="tags">
+        <li>python</li><li>tensorflow</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>ai-assistant</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/ai-assistant" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        An AI assistant equipped with tools for completing basic mathematical
+        calculations more efficiently.
+      </p>
+      <ul class="tags">
+        <li>python</li><li>llm</li><li>tool use</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>tetris</h3>
+        <div class="project-links">
+          <a href="https://github.com/TheMuffinMan1320/tetris" target="_blank" rel="noopener">code</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A classic Tetris implementation with a graphics component, showcasing
+        object-oriented design and core data structures.
+      </p>
+      <ul class="tags">
+        <li>java</li><li>oop</li>
       </ul>
     </article>
   </section>
@@ -115,8 +257,9 @@
         <p class="role-dates">Jul 2026 — Present</p>
       </div>
       <ul class="role-points">
-        <li>Built a full-stack Next.js dashboard with Google OAuth (Gmail, Calendar, Drive) to centralize deal and portfolio-company data for the investment team.</li>
-        <li>Wrote automation scripts and deployed them to AWS Lambda to streamline recurring data-processing workflows.</li>
+        <li>Built a full-stack Next.js dashboard with Google OAuth (Gmail, Calendar, Drive) for centralized daily workflows and task scheduling, adopted team-wide in support of a $5M acquisition.</li>
+        <li>Developed a custom retrieval-augmented generation (RAG) pipeline for company-wide hybrid search, building the data ingestion, tokenization, and vector database storage layers.</li>
+        <li>Built a GitLab CI/CD pipeline that cut merge conflicts by 35% across the team.</li>
       </ul>
     </article>
 
@@ -129,7 +272,7 @@
         <p class="role-dates">May 2026 — Jun 2026</p>
       </div>
       <ul class="role-points">
-        <li>Built a full-stack hotel management system with ML occupancy forecasting, dynamic pricing, and an AI agent layer for autonomous operations.</li>
+        <li>Built an ML-driven hotel management system with occupancy forecasting and dynamic pricing, driving a $540 average weekend profit increase through $5–$10 price adjustments across ~77% occupancy.</li>
         <li>Automated check-in/check-out workflows and integrated with external booking platforms (Expedia, Booking.com).</li>
       </ul>
     </article>
@@ -143,7 +286,7 @@
         <p class="role-dates">Jun 2024 — Aug 2024</p>
       </div>
       <ul class="role-points">
-        <li>Developed a full-stack web application using React and a Convex database to streamline maintenance requests for tenants in a high-rise office building.</li>
+        <li>Built a React and Convex maintenance request app for 24 corporate tenants, cutting average turnaround to 3 hours across ~15 requests processed weekly.</li>
         <li>Used Python, pandas, and Matplotlib to generate and email weekly expense reports to building management.</li>
       </ul>
     </article>
@@ -157,8 +300,9 @@
         <p class="role-dates">Jun 2023 — Aug 2023</p>
       </div>
       <ul class="role-points">
-        <li>Used Python, pandas, and Matplotlib to analyze $160k+ in donations given to the homeless shelter.</li>
-        <li>Managed Salesforce to schedule, background check, and confirm 300+ volunteers, and budgeted a 4th of July event for all shelter residents.</li>
+        <li>Analyzed $160k+ in donations with Python and pandas to identify top donors for a targeted acquisition strategy.</li>
+        <li>Managed Salesforce scheduling and background checks for 300+ volunteers, contributing to an 8% increase in volunteer retention and a 16% drop in no-shows.</li>
+        <li>Planned and budgeted a July 4th event for 200+ shelter residents on a $10k budget.</li>
       </ul>
     </article>
   </section>
@@ -186,14 +330,14 @@
     <div class="skill-group">
       <p class="skill-label">languages</p>
       <ul class="tags">
-        <li>java</li><li>python</li><li>c</li><li>javascript</li><li>typescript</li><li>html</li><li>css</li>
+        <li>java</li><li>python</li><li>c</li><li>c++</li><li>javascript</li><li>typescript</li><li>html</li><li>css</li>
       </ul>
     </div>
 
     <div class="skill-group">
       <p class="skill-label">frameworks & tools</p>
       <ul class="tags">
-        <li>spring boot</li><li>react</li><li>react native</li><li>postgresql</li><li>flyway</li><li>resilience4j</li><li>aws</li><li>docker</li><li>kubernetes</li>
+        <li>spring boot</li><li>react</li><li>react native</li><li>postgresql</li><li>flyway</li><li>fastapi</li><li>resilience4j</li><li>aws</li><li>docker</li><li>kubernetes</li>
       </ul>
     </div>
 
@@ -203,6 +347,32 @@
         <li>pandas</li><li>numpy</li><li>tensorflow</li><li>pytorch</li><li>matplotlib</li><li>streamlit</li>
       </ul>
     </div>
+  </section>
+
+  <section class="section" id="open-source">
+    <h2 class="section-title">// open-source</h2>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>mypy</h3>
+        <div class="project-links">
+          <a href="https://github.com/python/mypy" target="_blank" rel="noopener">repo</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        Submitted five crash-fix patches to <a href="https://github.com/python/mypy" target="_blank" rel="noopener">python/mypy</a>,
+        the standard static type checker for Python. Each patch root-causes an
+        internal crash reported against a real user repro, adds a regression test,
+        and fixes it without changing type-checking behavior for valid code.
+      </p>
+      <ul class="role-points">
+        <li><a href="https://github.com/python/mypy/pull/21851" target="_blank" rel="noopener">Fix crash on invalid starred assignment target</a> <span class="pr-status">· open</span></li>
+        <li><a href="https://github.com/python/mypy/pull/21850" target="_blank" rel="noopener">Fix crash with duplicate TypeVarTuple base classes</a> <span class="pr-status">· open</span></li>
+        <li><a href="https://github.com/python/mypy/pull/21849" target="_blank" rel="noopener">Fix crash on dataclass field assigned a functional namedtuple() call</a> <span class="pr-status">· open</span></li>
+        <li><a href="https://github.com/python/mypy/pull/21848" target="_blank" rel="noopener">Fix crash when singledispatch is shadowed by a user function</a> <span class="pr-status">· open</span></li>
+        <li><a href="https://github.com/python/mypy/pull/21847" target="_blank" rel="noopener">Fix crash on walrus assignment shadowing partial type in comprehension</a> <span class="pr-status">· open</span></li>
+      </ul>
+    </article>
   </section>
 
 </main>

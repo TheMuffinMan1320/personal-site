@@ -311,6 +311,20 @@ main, .footer {
   border-radius: 3px;
 }
 
+.projects-subhead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--faint);
+  margin: 8px 0 24px;
+}
+
+.pr-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
 /* Experience */
 .role {
   padding: 22px 0;
