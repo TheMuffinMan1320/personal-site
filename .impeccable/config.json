@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "/Users/afnanhasan/personal-site/styles.css"
+        ],
+        "createdAt": "2026-10-20T00:20:35.112Z",
+        "reason": "Model decision, not user-confirmed: .plate is an illustration of a real licence plate, where a thick border on rounded corners is the actual object, not a card accent; design approved by user in mockup"
+      },
+      {
+        "rule": "overused-font",
+        "value": "instrument serif",
+        "createdAt": "2026-10-20T00:21:19.221Z",
+        "reason": "user confirmed: keep Instrument Serif as the italic lede/caption face"
+      }
+    ]
+  }
+}
