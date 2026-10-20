@@ -4,393 +4,298 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Afnan Hasan — Software Engineer</title>
-<meta name="description" content="Afnan Hasan — CS student at UT Austin and software engineer. Full-stack projects, internship experience, and skills.">
+<meta name="description" content="Afnan Hasan — CS student at UT Austin and software engineer. Voice AI, full-stack and mobile projects, internship experience, and open-source work.">
+<meta name="theme-color" content="#ECEAE5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=Saira+Stencil+One&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="scanline" aria-hidden="true"></div>
+<div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
 
 <header class="topbar">
-  <span class="prompt">guest@afnanhasan:~$</span>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+  <a class="brand" href="#top" aria-label="Afnan Hasan, home">
+    <span class="brand-mark sten">AH</span>
+    <span class="brand-name disp">Afnan Hasan</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
     <span></span><span></span><span></span>
   </button>
-  <nav class="nav" id="nav">
-    <a href="#projects">~/projects</a>
-    <a href="#experience">~/experience</a>
-    <a href="#education">~/education</a>
-    <a href="#skills">~/skills</a>
-    <a href="#open-source">~/open-source</a>
-    <a href="#contact">~/contact</a>
-    <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">~/resume.pdf</a>
-    <span class="nav-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="4" width="18" height="12" rx="1.5"></rect>
-        <line x1="8" y1="20" x2="16" y2="20"></line>
-        <line x1="12" y1="16" x2="12" y2="20"></line>
-      </svg>
-    </span>
+  <nav class="nav cond" id="nav" aria-label="Primary">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#open-source">Open Source</a>
+    <a href="#contact">Contact</a>
   </nav>
+  <a class="btn cond" href="resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
 </header>
 
 <main>
 
   <section class="hero" id="top">
-    <p class="eyebrow">// computer science @ ut austin</p>
-    <h1 class="hero-name">Afnan Hasan<span class="cursor" aria-hidden="true"></span></h1>
-    <p class="hero-role">Software engineer building full-stack products across web, mobile, and ML.</p>
-    <p class="hero-bio">
-      I'm a CS student at UT Austin, currently interning remotely on the software
-      team at CS Holding, an investment firm based in Milan, and leading the dev
-      team on a member portal at Texas Convergent. I like taking products
-      end-to-end — Next.js dashboards, React Native apps, Spring Boot APIs — and
-      I've spent the last few summers doing exactly that across fintech, hospitality,
-      and property management.
-    </p>
-    <div class="hero-links">
-      <a href="mailto:afnanhasan1320@gmail.com">afnanhasan1320@gmail.com</a>
-      <a href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">github.com/TheMuffinMan1320</a>
-      <a href="https://linkedin.com/in/afnanhasancs" target="_blank" rel="noopener">linkedin.com/in/afnanhasancs</a>
+    <div class="wrap">
+      <p class="eyebrow cond">Computer Science · UT Austin · Class of 2028</p>
+      <div class="hero-row">
+        <h1 class="hero-name disp">Afnan<br>Hasan<span class="dot">.</span></h1>
+        <div class="sticker" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="96" fill="#0E0E0E"/>
+            <circle cx="100" cy="100" r="62" fill="none" stroke="#ECEAE5" stroke-width="1.5"/>
+            <defs><path id="ring" d="M 100 100 m -78 0 a 78 78 0 1 1 156 0 a 78 78 0 1 1 -156 0"/></defs>
+            <text font-family="Archivo" font-stretch="75%" font-weight="700" font-size="15" letter-spacing="3.4" fill="#ECEAE5"><textPath href="#ring">UT AUSTIN · COMPUTER SCIENCE · 3.96 GPA · SINCE 2025 ·</textPath></text>
+          </svg>
+          <div class="sticker-core sten">3.96<small class="cond">GPA</small></div>
+        </div>
+      </div>
+    </div>
+
+    <figure class="figure">
+      <div class="photo-frame">
+        <img class="photo" src="assets/img/chiron-pur-sport.jpg" alt="A Bugatti Chiron Pur Sport hypercar parked on grass, photographed from the front three-quarter angle" width="1920" height="1116" fetchpriority="high">
+        <span class="fig-tag type">FIG. 01</span>
+      </div>
+    </figure>
+  </section>
+
+  <section class="intro">
+    <div class="wrap">
+      <p class="intro-lede serif">Software engineer building things that move — voice AI, full-stack web, mobile and&nbsp;ML.</p>
+      <div class="intro-body">
+        <p class="p">I'm a CS student at UT Austin, currently a software engineering intern at LotTech building real-time voice agents that answer calls for dealerships, and leading the dev team on a member portal at Texas Convergent. I like taking products end-to-end — voice agents, Next.js dashboards, React Native apps, Spring Boot APIs.</p>
+        <div class="btn-row">
+          <a class="btn cond" href="mailto:afnanhasan1320@gmail.com">Email me</a>
+          <a class="btn cond" href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn cond" href="https://linkedin.com/in/afnanhasancs" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Highlights">
+    <div class="wrap">
+      <div class="stat"><b>35+</b><span class="cond">Dealerships answered by my voice AI agent</span></div>
+      <div class="stat"><b>1,200<small> ms</small></b><span class="cond">Live call response latency</span></div>
+      <div class="stat"><b>200+</b><span class="cond">Members on the Texas Convergent portal</span></div>
+      <div class="stat"><b>3,500+</b><span class="cond">Private files searchable via RAG</span></div>
+      <div class="stat"><b>94<small>%</small></b><span class="cond">Produce-freshness classifier accuracy</span></div>
     </div>
   </section>
 
   <section class="section" id="projects">
-    <h2 class="section-title">// projects</h2>
+    <div class="wrap">
+      <div class="sh"><span class="sh-num">01</span><h2 class="sh-title disp">Projects</h2><span class="sh-sub serif">the garage</span></div>
+      <div class="rule2" aria-hidden="true"></div>
 
-    <article class="project">
-      <div class="project-head">
-        <h3>Pantriful</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/Pantriful" target="_blank" rel="noopener">code</a>
+      <article class="proj">
+        <div class="proj-num" aria-hidden="true">P1</div>
+        <div class="proj-body">
+          <div class="proj-head"><h3 class="disp">Pantriful</h3><a class="cond ul" href="https://github.com/TheMuffinMan1320/Pantriful" target="_blank" rel="noopener">Code ↗</a></div>
+          <p class="p proj-desc">A full-stack kitchen-inventory mobile app with OAuth2 authentication, self-issued JWT session management, and per-user data isolation. Supports barcode lookup, low-stock notifications, and receipt scanning, plus a recipe recommendation engine that matches a user's live pantry against their cooking history using schema-constrained LLM output.</p>
+          <p class="stack type">java / spring boot / postgresql / flyway / typescript / react native / docker</p>
         </div>
-      </div>
-      <p class="project-desc">
-        A full-stack kitchen-inventory mobile app with OAuth2 authentication,
-        self-issued JWT session management, and per-user data isolation, verified
-        by 19+ integration tests. Supports barcode lookup, low-stock notifications,
-        and receipt scanning, plus a recipe recommendation engine that matches a
-        user's live pantry against their cooking history using schema-constrained
-        LLM output.
-      </p>
-      <ul class="tags">
-        <li>java</li><li>spring boot</li><li>postgresql</li><li>react native</li><li>docker</li>
-      </ul>
-    </article>
+        <dl class="spec">
+          <div><dt>ENGINE</dt><dd>Spring Boot</dd></div>
+          <div><dt>AUTH</dt><dd>OAuth2 + JWT</dd></div>
+          <div><dt>TESTS</dt><dd>19+ integration</dd></div>
+          <div><dt>BUILT</dt><dd>Jul 2026 →</dd></div>
+        </dl>
+      </article>
 
-    <article class="project">
-      <div class="project-head">
-        <h3>Homegrown</h3>
-      </div>
-      <p class="project-desc">
-        A full-stack mobile marketplace for fresh produce, plant posts, and community
-        groups, with 30+ early users. Built a price-suggestion model using polynomial
-        regression trained on 15,000+ historical listings, and a MobileNetV2 classifier
-        trained on 40,000+ produce images to verify freshness at 94% test accuracy.
-      </p>
-      <ul class="tags">
-        <li>typescript</li><li>react native</li><li>postgresql</li><li>tensorflow</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>MyDrive</h3>
-        <div class="project-links">
-          <a href="https://carplatform-frontend-production.up.railway.app" target="_blank" rel="noopener">live</a>
-          <a href="https://github.com/TheMuffinMan1320/carplatform" target="_blank" rel="noopener">code</a>
+      <article class="proj">
+        <div class="proj-num" aria-hidden="true">P2</div>
+        <div class="proj-body">
+          <div class="proj-head"><h3 class="disp">Homegrown</h3></div>
+          <p class="p proj-desc">A full-stack mobile marketplace for fresh produce, plant posts, and community groups, grown to 30+ early users. Built a price-suggestion model using polynomial regression trained on 15,000+ historical listings, and a MobileNetV2 classifier trained on 40,000+ produce images to verify freshness.</p>
+          <p class="stack type">typescript / react native / postgresql / tensorflow</p>
         </div>
-      </div>
-      <p class="project-desc">
-        A full-stack car rental platform backend (Spring Boot/Java REST API) for a
-        multi-location fleet, with JWT auth, Stripe payment processing, and
-        booking workflows that require license/insurance verification and lease
-        signing before payment. Double-booking is enforced at the database level
-        with a Postgres exclusion constraint, not just an application-side check,
-        and the whole thing is covered by 35 automated tests (JUnit, Mockito,
-        Testcontainers).
-      </p>
-      <ul class="tags">
-        <li>java</li><li>spring boot</li><li>postgresql</li><li>stripe</li><li>docker</li>
-      </ul>
-    </article>
+        <dl class="spec">
+          <div><dt>USERS</dt><dd>30+ early</dd></div>
+          <div><dt>PRICING DATA</dt><dd>15,000+ listings</dd></div>
+          <div><dt>VISION DATA</dt><dd>40,000+ images</dd></div>
+          <div><dt>TEST ACC.</dt><dd>94%</dd></div>
+        </dl>
+      </article>
 
-    <p class="projects-subhead">// also on github</p>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>FinTrack</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/fintrack" target="_blank" rel="noopener">code</a>
+      <article class="proj last">
+        <div class="proj-num" aria-hidden="true">P3</div>
+        <div class="proj-body">
+          <div class="proj-head"><h3 class="disp">MyDrive</h3><a class="cond ul" href="https://carplatform-frontend-production.up.railway.app" target="_blank" rel="noopener">Live ↗</a><a class="cond ul" href="https://github.com/TheMuffinMan1320/carplatform" target="_blank" rel="noopener">Code ↗</a></div>
+          <p class="p proj-desc">A full-stack car rental platform (Spring Boot REST API, React frontend) used by ~85 monthly renters across 45+ vehicles, with JWT auth, Stripe payments, and booking workflows that require license/insurance verification and lease signing before payment. Double-booking is enforced at the database level with a Postgres exclusion constraint.</p>
+          <p class="stack type">java / spring boot / react / postgresql / stripe / docker / aws</p>
         </div>
-      </div>
-      <p class="project-desc">
-        A REST API simulating a fintech backend, with JWT auth, RBAC, idempotent
-        transaction processing, and Flyway migrations. Integrates Resilience4j
-        circuit breakers and structured logging with per-request trace IDs, backed
-        by a three-tier test suite (unit, MockMvc, Testcontainers).
-      </p>
-      <ul class="tags">
-        <li>java</li><li>spring boot</li><li>postgresql</li><li>flyway</li><li>resilience4j</li>
-      </ul>
-    </article>
+        <dl class="spec">
+          <div><dt>RENTERS</dt><dd>~85 / month</dd></div>
+          <div><dt>FLEET</dt><dd>45+ vehicles</dd></div>
+          <div><dt>TESTS</dt><dd>35 automated</dd></div>
+          <div><dt>PAYMENTS</dt><dd>Stripe</dd></div>
+        </dl>
+      </article>
 
-    <article class="project">
-      <div class="project-head">
-        <h3>cache-simulator</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/cache-simulator" target="_blank" rel="noopener">code</a>
-        </div>
+      <h3 class="subhead serif">Also in the garage</h3>
+      <div class="minis">
+        <article class="mini"><div class="mini-top"><h4 class="disp">FinTrack</h4><a class="cond" href="https://github.com/TheMuffinMan1320/fintrack" target="_blank" rel="noopener">Code ↗</a></div><p class="p">A REST API simulating a fintech backend, with JWT auth, RBAC, idempotent transaction processing, Flyway migrations, Resilience4j circuit breakers, and a three-tier test suite.</p><p class="stack type">java / spring boot / postgresql</p></article>
+        <article class="mini"><div class="mini-top"><h4 class="disp">cache-simulator</h4><a class="cond" href="https://github.com/TheMuffinMan1320/cache-simulator" target="_blank" rel="noopener">Code ↗</a></div><p class="p">A CPU cache simulator in C modeling an N-way set-associative cache with LRU replacement — hit rate jumps from 81.73% (direct-mapped) to 98.97% (4-way) on the same trace.</p><p class="stack type">c / computer architecture</p></article>
+        <article class="mini"><div class="mini-top"><h4 class="disp">CarSight</h4><a class="cond" href="https://github.com/TheMuffinMan1320/CarSight" target="_blank" rel="noopener">Code ↗</a></div><p class="p">A social car-spotting platform for iOS. Identify cars with on-device AI, build a spotted-car collection, follow enthusiasts, and book automotive photographers.</p><p class="stack type">react native / expo / on-device ai</p></article>
+        <article class="mini"><div class="mini-top"><h4 class="disp">LooxMax</h4><a class="cond" href="https://github.com/TheMuffinMan1320/LooxMax" target="_blank" rel="noopener">Code ↗</a></div><p class="p">An AI-powered facial analysis tracker. Upload a photo, get scored on six features by Claude Vision, track progress, and compete on friend leaderboards.</p><p class="stack type">react native / expo / claude vision</p></article>
+        <article class="mini"><div class="mini-top"><h4 class="disp">EgoLift</h4><a class="cond" href="https://github.com/TheMuffinMan1320/EgoLift" target="_blank" rel="noopener">Code ↗</a></div><p class="p">Records a short exercise clip and uses on-device pose estimation to analyze form in real time, offline. Errors surface as post-it annotations pinned to the body part to correct.</p><p class="stack type">react native / pose estimation</p></article>
+        <article class="mini"><div class="mini-top"><h4 class="disp">get-swe</h4><a class="cond" href="https://github.com/TheMuffinMan1320/get-swe" target="_blank" rel="noopener">Code ↗</a></div><p class="p">Eight Claude Code skills to land a SWE internship: tailor a resume to a posting, drill DSA and behavioral questions, run mock interviews, and audit a GitHub profile.</p><p class="stack type">shell / claude code</p></article>
       </div>
-      <p class="project-desc">
-        A CPU cache simulator in C modeling a configurable N-way set-associative
-        cache with LRU replacement. Decomposes memory addresses into tag/index/offset,
-        replays synthetic memory traces, and reports hit/miss rates, including a
-        config comparison tool showing the hit rate jump from 81.73% (direct-mapped)
-        to 98.97% (4-way) on the same trace.
-      </p>
-      <ul class="tags">
-        <li>c</li><li>computer architecture</li><li>systems</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>CarSight</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/CarSight" target="_blank" rel="noopener">code</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        A social car-spotting platform for iOS. Users identify cars with on-device
-        AI, build a personal spotted-car collection, follow other enthusiasts, and
-        book professional automotive photographers.
-      </p>
-      <ul class="tags">
-        <li>typescript</li><li>react native</li><li>expo</li><li>on-device ai</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>LooxMax</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/LooxMax" target="_blank" rel="noopener">code</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        An AI-powered facial analysis tracker. Upload a photo, get scored on six
-        facial features by Claude Vision, track progress over time, and compete on
-        leaderboards with friends.
-      </p>
-      <ul class="tags">
-        <li>typescript</li><li>react native</li><li>expo</li><li>claude vision</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>EgoLift</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/EgoLift" target="_blank" rel="noopener">code</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        Records a short clip of an exercise and uses on-device pose estimation to
-        analyze form in real time, no internet connection required. Errors surface
-        as post-it annotations pinned to the exact body part that needs correction.
-      </p>
-      <ul class="tags">
-        <li>typescript</li><li>react native</li><li>pose estimation</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>get-swe</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/get-swe" target="_blank" rel="noopener">code</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        Everything a college student needs to land a software engineering
-        internship, packaged as eight Claude Code skills: tailor a resume to a real
-        posting, drill DSA and behavioral questions, run a full mock interview, find
-        open postings, generate a portfolio project worth building, and get a
-        GitHub profile audited like a recruiter would.
-      </p>
-      <ul class="tags">
-        <li>shell</li><li>claude code</li><li>developer tooling</li>
-      </ul>
-    </article>
-
-    <article class="project">
-      <div class="project-head">
-        <h3>tetris</h3>
-        <div class="project-links">
-          <a href="https://github.com/TheMuffinMan1320/tetris" target="_blank" rel="noopener">code</a>
-        </div>
-      </div>
-      <p class="project-desc">
-        A classic Tetris implementation with a graphics component, showcasing
-        object-oriented design and core data structures.
-      </p>
-      <ul class="tags">
-        <li>java</li><li>oop</li>
-      </ul>
-    </article>
+    </div>
   </section>
+
+  <div class="checker" aria-hidden="true" style="margin-top:40px"></div>
 
   <section class="section" id="experience">
-    <h2 class="section-title">// experience</h2>
+    <div class="wrap">
+      <div class="sh"><span class="sh-num">02</span><h2 class="sh-title disp">Experience</h2><span class="sh-sub serif">the timing sheet</span></div>
+      <div class="rule2" aria-hidden="true"></div>
 
-    <article class="role">
-      <div class="role-head">
-        <div>
-          <h3>Software Engineering Intern</h3>
-          <p class="role-org">CS Holding — Part-time, Remote (Milan, Italy)</p>
+      <figure class="exp-figure">
+        <div class="photo-frame">
+          <img class="photo" src="assets/img/huayra-bc-side.jpg" alt="Side profile of a Pagani Huayra BC hypercar with carbon-fibre bodywork and a large rear wing" width="1920" height="1125" loading="lazy">
+          <span class="fig-tag type">FIG. 02</span>
         </div>
-        <p class="role-dates">Jul 2026 — Present</p>
-      </div>
-      <ul class="role-points">
-        <li>Built a Next.js dashboard with automated email classification triage handling 200+ emails a day, centralizing daily workflows and task scheduling, shipped with GitHub Actions CI/CD.</li>
-        <li>Developed a custom retrieval-augmented generation (RAG) pipeline using LangChain and a pgvector database for company-wide hybrid search across 3,500+ private files, combining semantic and lexical matching.</li>
-      </ul>
-    </article>
+      </figure>
 
-    <article class="role">
-      <div class="role-head">
-        <div>
-          <h3>Software Engineering Intern</h3>
-          <p class="role-org">Days Inn and Suites by Wyndham</p>
-        </div>
-        <p class="role-dates">May 2026 — Jun 2026</p>
-      </div>
-      <ul class="role-points">
-        <li>Trained an occupancy-forecasting model with XGBoost on booking history to drive on-demand $5–$10 rate adjustments during peak-occupancy periods, increasing monthly revenue by 3.8%.</li>
-        <li>Built REST API integrations with a channel manager to auto-ingest Expedia and Booking.com reservations via webhooks, eliminating manual front-desk data entry.</li>
-      </ul>
-    </article>
+      <div class="roles-head cond" aria-hidden="true"><span>Pos</span><span>Team &amp; role</span><span>Stint</span></div>
 
-    <article class="role">
-      <div class="role-head">
-        <div>
-          <h3>Technical Developer Lead</h3>
-          <p class="role-org">Texas Convergent</p>
-        </div>
-        <p class="role-dates">Jan 2026 — Present</p>
-      </div>
-      <ul class="role-points">
-        <li>Co-led the design and development of an all-in-one member portal used by 200+ members to handle recruiting, attendance, and internal communication.</li>
-        <li>Built a fraud-resistant attendance system using a REST endpoint that rotates a short-lived token every 5 seconds into a live QR code, improving true attendance by 23%.</li>
-      </ul>
-    </article>
-
-    <article class="role">
-      <div class="role-head">
-        <div>
-          <h3>Software Engineering Intern</h3>
-          <p class="role-org">Lincoln Property Company</p>
-        </div>
-        <p class="role-dates">Jun 2025 — Aug 2025</p>
-      </div>
-      <ul class="role-points">
-        <li>Built an NLP classifier to auto-triage maintenance requests by urgency and category, comparing a TF-IDF baseline against a fine-tuned transformer and reaching 87% precision on emergency-priority requests.</li>
-        <li>Automated weekly expense reporting and visualization for building management using Python, pandas, and Matplotlib.</li>
-      </ul>
-    </article>
-  </section>
-
-  <section class="section" id="education">
-    <h2 class="section-title">// education</h2>
-
-    <article class="role">
-      <div class="role-head">
-        <div>
-          <h3>Bachelor of Science, Computer Science</h3>
-          <p class="role-org">University of Texas at Austin — GPA 3.96/4.0</p>
-        </div>
-        <p class="role-dates">Aug 2025 — May 2028</p>
-      </div>
-      <ul class="tags">
-        <li>data structures & algorithms</li><li>computer architecture</li><li>machine learning</li><li>operating systems</li>
-      </ul>
-    </article>
-  </section>
-
-  <section class="section" id="skills">
-    <h2 class="section-title">// skills</h2>
-
-    <div class="skill-group">
-      <p class="skill-label">languages</p>
-      <ul class="tags">
-        <li>java</li><li>python</li><li>c</li><li>c++</li><li>javascript</li><li>typescript</li><li>html</li><li>css</li>
-      </ul>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-label">frameworks & tools</p>
-      <ul class="tags">
-        <li>git</li><li>spring boot</li><li>react</li><li>react native</li><li>postgresql</li><li>flyway</li><li>fastapi</li><li>resilience4j</li><li>aws</li><li>docker</li>
-      </ul>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-label">libraries</p>
-      <ul class="tags">
-        <li>pandas</li><li>numpy</li><li>tensorflow</li><li>pytorch</li><li>matplotlib</li><li>streamlit</li><li>scikit-learn</li>
-      </ul>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-label">ai / ml</p>
-      <ul class="tags">
-        <li>langchain</li><li>langgraph</li><li>rag</li><li>nlp</li>
-      </ul>
+      <article class="role">
+        <div class="role-top"><span class="role-n sten">01</span><div class="role-t"><h3 class="disp">LotTech</h3><p class="serif">Software Engineering Intern · Austin, TX</p></div><p class="role-d"><span class="live">LIVE</span> Oct 2026 →</p></div>
+        <ul class="role-points">
+          <li>Built a real-time voice AI agent in Python using Pipecat, AssemblyAI speech-to-text, Rime/Cartesia text-to-speech, and Claude/OpenAI LLMs, answering inbound calls for 35+ dealerships with response latency minimized to 1,200 ms.</li>
+          <li>Implemented LLM tool calls for live business-hours checks, service-appointment transportation booking, and follow-up routing to the requested employee, backed by FastAPI and Supabase (PostgreSQL).</li>
+          <li>Hardened a TypeScript/Hono REST API to require confirmed-active users before login and requests proceed, and slimmed Docker images to install only each service's runtime dependencies.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><span class="role-n sten">02</span><div class="role-t"><h3 class="disp">Texas Convergent</h3><p class="serif">Technical Developer Lead · Austin, TX</p></div><p class="role-d"><span class="live">LIVE</span> Jan 2026 →</p></div>
+        <ul class="role-points">
+          <li>Co-led the design and development of an all-in-one member portal used by 200+ members to handle recruiting, attendance, and internal communication.</li>
+          <li>Built a fraud-resistant attendance system using a REST endpoint that rotates a short-lived token every 5 seconds into a live QR code, improving true attendance by 23%.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><span class="role-n sten">03</span><div class="role-t"><h3 class="disp">CS Holding</h3><p class="serif">Software Engineering Intern · Part-time, Remote (Milan, Italy)</p></div><p class="role-d">Jul – Sep 2026</p></div>
+        <ul class="role-points">
+          <li>Built a Next.js dashboard with automated email classification triage handling 200+ emails a day, centralizing daily workflows and task scheduling, shipped with GitHub Actions CI/CD.</li>
+          <li>Developed a custom retrieval-augmented generation (RAG) pipeline using LangChain and a pgvector database for company-wide hybrid search across 3,500+ private files, combining semantic and lexical matching.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><span class="role-n sten">04</span><div class="role-t"><h3 class="disp">Days Inn &amp; Suites</h3><p class="serif">Software Engineering Intern · Wyndham</p></div><p class="role-d">May – Jun 2026</p></div>
+        <ul class="role-points">
+          <li>Trained an occupancy-forecasting model with XGBoost on booking history to drive on-demand $5–$10 rate adjustments during peak-occupancy periods, increasing monthly revenue by 3.8%.</li>
+          <li>Built REST API integrations with a channel manager to auto-ingest Expedia and Booking.com reservations via webhooks, eliminating manual front-desk data entry.</li>
+        </ul>
+      </article>
+      <article class="role last">
+        <div class="role-top"><span class="role-n sten">05</span><div class="role-t"><h3 class="disp">Lincoln Property Co.</h3><p class="serif">Software Engineering Intern · Plano, TX</p></div><p class="role-d">Jun – Aug 2025</p></div>
+        <ul class="role-points">
+          <li>Built an NLP classifier to auto-triage maintenance requests by urgency and category, comparing a TF-IDF baseline against a fine-tuned transformer and reaching 87% precision on emergency-priority requests.</li>
+          <li>Automated weekly expense reporting and visualization for building management using Python, pandas, and Matplotlib.</li>
+        </ul>
+      </article>
     </div>
   </section>
 
-  <section class="section" id="open-source">
-    <h2 class="section-title">// open-source</h2>
+  <section class="edu-skills">
+    <div class="wrap">
 
-    <article class="project">
-      <div class="project-head">
-        <h3>mypy</h3>
-        <div class="project-links">
-          <a href="https://github.com/python/mypy" target="_blank" rel="noopener">repo</a>
+      <div class="edu-col" id="education">
+        <div class="sh"><span class="sh-num">03</span><h2 class="sh-title disp">Education</h2></div>
+        <div class="licence">
+          <div class="licence-bar cond"><span>Texas</span><span>University Licence</span></div>
+          <div class="licence-main">
+            <div class="licence-photo sten" aria-hidden="true">AH</div>
+            <div class="licence-fields">
+              <div><div class="lbl cond">Name</div><div class="disp" style="font-size:20px">Afnan Hasan</div></div>
+              <div><div class="lbl cond">Class</div><div class="val type">B.S. Computer Science</div></div>
+              <div><div class="lbl cond">Institution</div><div class="val type">UT Austin</div></div>
+            </div>
+          </div>
+          <div class="licence-row">
+            <div><div class="lbl cond">Issued</div><div class="val type">Aug 2025</div></div>
+            <div><div class="lbl cond">Expires</div><div class="val type">May 2028</div></div>
+            <div><div class="lbl cond">GPA</div><div class="sten" style="font-size:24px;line-height:1">3.96 / 4.0</div></div>
+          </div>
+          <p class="licence-note type"><b>ENDORSEMENTS:</b> data structures &amp; algorithms · computer architecture · machine learning · operating systems</p>
         </div>
       </div>
-      <p class="project-desc">
-        Submitted five crash-fix patches to <a href="https://github.com/python/mypy" target="_blank" rel="noopener">python/mypy</a>,
-        the standard static type checker for Python. Each patch root-causes an
-        internal crash reported against a real user repro, adds a regression test,
-        and fixes it without changing type-checking behavior for valid code.
-      </p>
-      <ul class="role-points">
-        <li><a href="https://github.com/python/mypy/pull/21851" target="_blank" rel="noopener">Fix crash on invalid starred assignment target</a> <span class="pr-status">· open</span></li>
-        <li><a href="https://github.com/python/mypy/pull/21850" target="_blank" rel="noopener">Fix crash with duplicate TypeVarTuple base classes</a> <span class="pr-status">· open</span></li>
-        <li><a href="https://github.com/python/mypy/pull/21849" target="_blank" rel="noopener">Fix crash on dataclass field assigned a functional namedtuple() call</a> <span class="pr-status">· open</span></li>
-        <li><a href="https://github.com/python/mypy/pull/21848" target="_blank" rel="noopener">Fix crash when singledispatch is shadowed by a user function</a> <span class="pr-status">· open</span></li>
-        <li><a href="https://github.com/python/mypy/pull/21847" target="_blank" rel="noopener">Fix crash on walrus assignment shadowing partial type in comprehension</a> <span class="pr-status">· open</span></li>
+
+      <div class="skills-col" id="skills">
+        <div class="sh"><span class="sh-num">04</span><h2 class="sh-title disp">Skills</h2><span class="sh-sub serif">parts catalogue</span></div>
+        <dl>
+          <div class="sk"><dt class="cond">Languages</dt><dd>Java / Python / C / C++ / JavaScript / TypeScript / SQL / HTML / CSS</dd></div>
+          <div class="sk"><dt class="cond">Frameworks</dt><dd>Spring Boot / React / React Native / Next.js / FastAPI / Hono / Flyway / Resilience4j</dd></div>
+          <div class="sk"><dt class="cond">Data &amp; Cloud</dt><dd>PostgreSQL / Supabase / pgvector / AWS / Docker / Kubernetes / GitHub Actions / Git</dd></div>
+          <div class="sk"><dt class="cond">Libraries</dt><dd>pandas / NumPy / TensorFlow / PyTorch / Matplotlib / Streamlit / scikit-learn</dd></div>
+          <div class="sk"><dt class="cond">AI / ML</dt><dd>LangChain / LangGraph / RAG / NLP / Pipecat / AssemblyAI / Claude API / OpenAI API</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="oss" id="open-source">
+    <div class="wrap">
+      <div class="sh"><span class="sh-num">05</span><h2 class="sh-title disp">Open Source</h2><span class="sh-sub serif">the pit log</span></div>
+      <div class="oss-intro">
+        <h3 class="disp">python/mypy</h3>
+        <p class="p">Five crash-fix patches to the standard static type checker for Python. Each root-causes an internal crash from a real user repro, adds a regression test, and fixes it without changing type-checking behavior for valid code. <a href="https://github.com/python/mypy" target="_blank" rel="noopener">Repo ↗</a></p>
+      </div>
+      <ul class="prs">
+        <li class="pr"><span class="pr-num">#21851</span><a href="https://github.com/python/mypy/pull/21851" target="_blank" rel="noopener">Fix crash on invalid starred assignment target</a><span class="stamp cond">Open</span></li>
+        <li class="pr"><span class="pr-num">#21850</span><a href="https://github.com/python/mypy/pull/21850" target="_blank" rel="noopener">Fix crash with duplicate TypeVarTuple base classes</a><span class="stamp cond">Open</span></li>
+        <li class="pr"><span class="pr-num">#21849</span><a href="https://github.com/python/mypy/pull/21849" target="_blank" rel="noopener">Fix crash on dataclass field assigned a functional namedtuple() call</a><span class="stamp cond">Open</span></li>
+        <li class="pr"><span class="pr-num">#21848</span><a href="https://github.com/python/mypy/pull/21848" target="_blank" rel="noopener">Fix crash when singledispatch is shadowed by a user function</a><span class="stamp cond">Open</span></li>
+        <li class="pr"><span class="pr-num">#21847</span><a href="https://github.com/python/mypy/pull/21847" target="_blank" rel="noopener">Fix crash on walrus assignment shadowing partial type in comprehension</a><span class="stamp cond">Open</span></li>
       </ul>
-    </article>
+    </div>
   </section>
 
 </main>
 
 <footer class="footer" id="contact">
-  <p class="footer-prompt">// contact</p>
-  <div class="footer-links">
-    <a href="mailto:afnanhasan1320@gmail.com">afnanhasan1320@gmail.com</a>
-    <a href="tel:+14693831991">469-383-1991</a>
-    <a href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">github</a>
-    <a href="https://linkedin.com/in/afnanhasancs" target="_blank" rel="noopener">linkedin</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">resume.pdf</a>
+  <div class="checker inv" aria-hidden="true"></div>
+  <div class="footer-main">
+    <div class="wrap footer-top">
+      <div class="footer-copy">
+        <p class="footer-kicker cond">Contact</p>
+        <h2 class="footer-title serif">Let's build something fast.</h2>
+        <div class="footer-links">
+          <a href="mailto:afnanhasan1320@gmail.com">afnanhasan1320@gmail.com</a>
+          <a href="tel:+14693831991">469-383-1991</a>
+          <a href="https://github.com/TheMuffinMan1320" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/afnanhasancs" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        </div>
+      </div>
+      <div class="plate" aria-hidden="true">
+        <div class="plate-state cond">Texas</div>
+        <div class="plate-num disp">AH 1320</div>
+        <div class="plate-sub cond">UT Austin · Class of 2028</div>
+      </div>
+    </div>
+
+    <figure class="footer-figure">
+      <img class="photo" src="assets/img/huayra-roadster-side.jpg" alt="Side profile of a Pagani Huayra Roadster BC hypercar on a lawn" width="2354" height="764" loading="lazy">
+    </figure>
   </div>
-  <p class="footer-meta">Built from scratch, no framework. Last updated 2026.</p>
+
+  <div class="footer-base">
+    <div class="wrap">
+      <p class="cond">Photo credits — via Wikimedia Commons, converted to black &amp; white</p>
+      <ul class="credits">
+        <li>Bugatti Chiron Pur Sport — photo by MrWalkr, <a href="https://commons.wikimedia.org/wiki/File:2021_Bugatti_Chiron_Pur_Sport_SP24.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+        <li>Pagani Huayra BC — photo by Mr.choppers, <a href="https://commons.wikimedia.org/wiki/File:2017_Pagani_Huayra_BC_Macchina_Volante_in_Greenwich,_right_side.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+        <li>Pagani Huayra Roadster BC — photo by MrWalkr, <a href="https://commons.wikimedia.org/wiki/File:Pagani_Huayra_Roadster_Side.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+      </ul>
+      <p class="footer-meta cond">Built from scratch, no framework · Last updated 2026</p>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>

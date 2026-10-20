@@ -17,17 +17,19 @@ if (navToggle && nav) {
 }
 
 // Highlight current section in nav on scroll
-const sections = document.querySelectorAll('main .section, main .hero');
 const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const targets = Array.from(navLinks)
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
 
-if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
+if (targets.length && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
           navLinks.forEach((link) => {
-            link.style.color = link.getAttribute('href') === `#${id}` ? 'var(--ink)' : '';
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
           });
         }
       });
@@ -35,5 +37,5 @@ if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
     { rootMargin: '-40% 0px -55% 0px' }
   );
 
-  sections.forEach((section) => observer.observe(section));
+  targets.forEach((target) => observer.observe(target));
 }

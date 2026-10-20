@@ -5,24 +5,22 @@ no framework, no dependencies.
 
 ## Files
 
-- `index.html` — all content (hero, projects, experience, skills, contact)
+- `index.html` — all content (hero, projects, experience, education, skills, open source, contact)
 - `styles.css` — all styling
 - `script.js` — mobile nav toggle + active-section highlighting
-- `resume.pdf` — placeholder path referenced by the nav and footer; add your actual resume here
+- `resume.pdf` — current resume linked from the nav and footer
+- `assets/img/` — three CC BY-SA car photos (credited in the footer)
 
-## Before you publish
+## Updating content
 
-Everything in `index.html` is placeholder content — replace it with your own:
+When the resume changes, update `index.html` to match and replace `resume.pdf`:
 
-1. **Hero** — name, tagline, bio, and the three link URLs (email, GitHub, LinkedIn).
-2. **Projects** — three `<article class="project">` blocks. Swap in your own projects,
-   update the `source`/`demo` links (currently `#` placeholders), and edit the `<li>` tags
-   under `.tags` to match your stack.
-3. **Experience** — three `<article class="role">` blocks with role, org, dates, and bullets.
-4. **Skills** — edit the three `.skill-group` lists (languages, frameworks & tools, coursework).
-5. **Resume** — drop a `resume.pdf` file next to `index.html`, or update the two links
-   pointing to it if you want to host it elsewhere.
-6. **Page title / meta description** in the `<head>` of `index.html`.
+1. **Hero / intro** — bio paragraph and the three link URLs.
+2. **Stats band** — headline numbers (`.stats`).
+3. **Projects** — `.proj` blocks (with `.spec` boxes) and the smaller `.mini` cards.
+4. **Experience** — `.role` rows; mark current roles with the `LIVE` chip.
+5. **Skills / Education** — `.sk` rows and the licence card.
+6. **Open source** — the `.pr` list.
 
 ## Running locally
 
@@ -46,11 +44,10 @@ the GitHub repo — both auto-detect static sites with no configuration needed.
 
 ## Design notes
 
-- Type: Fraunces (display), Inter (body), IBM Plex Mono (labels, nav, tags) —
-  the monospace accents are a deliberate nod to the CS subject matter.
-- Color: strict grayscale (`--ink`, `--muted`, `--faint`, `--rule`, `--paper`) —
-  no accent color, per the minimalist brief.
-- Signature element: the blinking cursor after your name, and the `~/section`
-  terminal-style nav labels.
-- Fully responsive with a collapsing mobile nav, visible keyboard focus states,
-  and `prefers-reduced-motion` support.
+- Theme: monotone motorsport poster / workshop manual — paper, ink and grays only.
+- Type: Archivo (expanded italic display), Instrument Serif (italic ledes), Saira Stencil One
+  (numbers), Courier Prime (specs, stacks, dates).
+- Photos: Creative Commons car photos, displayed in black and white. They are CC BY-SA, so keep
+  the credit list in the footer when editing.
+- Fully responsive with a collapsing mobile nav, visible keyboard focus states, and
+  `prefers-reduced-motion` support.
