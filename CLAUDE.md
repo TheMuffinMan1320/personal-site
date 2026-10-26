@@ -17,7 +17,8 @@ Plain HTML/CSS/JS — intentionally no framework, no build step, no dependencies
 
 - `index.html` — all page content and structure
 - `styles.css` — all styling, driven by CSS custom properties under `:root`
-- `script.js` — mobile nav toggle, `IntersectionObserver`-based active-section nav highlight
+- `scene.js` — full-page 3D: fixed WebGL canvas (three.js from jsDelivr via an import map in `index.html`, still no build step) whose camera flies through line-drawn car parts on scroll (wheel + tyre, brake rotor + caliper, coil-over shock, steering wheel, gear, piston + rod)
+- `script.js` — mobile nav toggle, `IntersectionObserver`-based active-section nav highlight, CSS-3D scroll reveals + pointer tilt
 - `resume.pdf` — current resume (copied from Afnan_Hasan_Resume_Oct26.pdf)
 - `assets/img/` — three Creative Commons car photos (see Photo credits below)
 
@@ -30,7 +31,8 @@ Plain HTML/CSS/JS — intentionally no framework, no build step, no dependencies
   ledes and captions, `.sten` (Saira Stencil One) for numbers, `.type` (Courier Prime) for
   specs/stacks/dates.
 - **Car imagery:** real CC-licensed photos, always shown through CSS `grayscale(1)` in a
-  hard-shadow frame. Don't add colored photos or drawn/vector cars.
+  hard-shadow frame (the two lower photos get scroll-linked 3D tilt/parallax). Don't add colored
+  photos or drawn/vector cars.
 - **Recurring motifs:** livery stripe at top, checkered-flag dividers, spec-sheet boxes
   (`.spec`), timing-sheet experience rows, licence card (education), parts-catalogue skills,
   rubber-stamp "OPEN" PR tags, licence plate in the footer.

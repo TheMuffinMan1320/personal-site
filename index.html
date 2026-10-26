@@ -10,8 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=Saira+Stencil+One&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
 </head>
 <body>
+
+<canvas class="scene" id="scene" aria-hidden="true"></canvas>
 
 <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
 
@@ -298,6 +301,7 @@
   </div>
 </footer>
 
+<script type="module" src="scene.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
